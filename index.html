@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Online Escaperoom: De Code van Nederland</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: white;
+      color: #111;
+      padding: 20px;
+    }
+    .room {
+      display: none;
+      margin-top: 20px;
+    }
+    .visible {
+      display: block;
+    }
+    input[type="text"] {
+      padding: 8px;
+      margin-top: 10px;
+      margin-right: 10px;
+      width: 200px;
+    }
+    button {
+      padding: 8px 12px;
+      margin-top: 10px;
+      cursor: pointer;
+    }
+    .correct {
+      color: green;
+      font-weight: bold;
+    }
+    .wrong {
+      color: red;
+    }
+    #timer {
+      font-size: 1.2em;
+      margin-bottom: 20px;
+    }
+    .hint-button {
+      background: #007bff;
+      color: white;
+      border: none;
+      padding: 6px 10px;
+      margin-left: 10px;
+    }
+    .hint-text {
+      display: none;
+      font-style: italic;
+      color: #444;
+      margin-top: 5px;
+    }
+    #endScreen {
+      display: none;
+      text-align: center;
+    }
+    #endScreen h2 {
+      font-size: 2em;
+      margin-top: 40px;
+    }
+    #lyrics {
+      font-size: 1.2em;
+      margin-top: 20px;
+      font-style: italic;
+    }
+    audio {
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <h1>🧩 Escaperoom: De Code van Nederland</h1>
+  <p id="timer">⏳ Tijd over: 30:00</p>
+  <div id="game"></div>
+
+  <div id="endScreen">
+    <h2>🎉 Je hebt de code gekraakt!</h2>
+    <p>Gefeliciteerd, je hebt alle raadsels opgelost binnen de tijd!</p>
+    <div id="lyrics">
+      And I'd give up forever to touch you<br>
+      'Cause I know that you feel me somehow<br>
+      You're the closest to heaven that I'll ever be<br>
+      And I don't wanna go home right now
+    </div>
+    <audio controls autoplay>
+      <source src="instrumental-iris.mp3" type="audio/mpeg">
+      Jouw browser ondersteunt geen audio.
+    </audio>
+  </div>
+
+  <!-- JavaScript logica voor hints, timer, vragen enz. komt hier -->
+</body>
+</html>
